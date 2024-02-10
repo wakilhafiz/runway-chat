@@ -96,7 +96,9 @@ const Header = () => {
           <ul>
             <li>
               {" "}
-              <SlHome></SlHome>{" "}
+              <Link to="/home">
+                <SlHome></SlHome>
+              </Link>{" "}
             </li>
             <li>
               {" "}
