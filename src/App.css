@@ -1,0 +1,176 @@
+/* registration start */
+
+#registration {
+  @apply lg:h-screen flex items-center;
+}
+
+#registration .main {
+  @apply container mx-auto flex px-1 lg:px-2  justify-between items-center flex-wrap;
+}
+#registration .main .left {
+  @apply w-full lg:w-[55%];
+}
+#registration .main .right {
+  @apply text-center w-full lg:w-[35%] mt-14 lg:mt-0;
+}
+
+.main-heading {
+  @apply text-5xl font-bold text-primary capitalize font-poppins;
+}
+.pera {
+  @apply text-sm mt-2 font-normal text-fifth font-poppins;
+}
+
+input {
+  @apply !p-2 border border-primary rounded-lg  w-full;
+}
+
+#registration input {
+  @apply mb-3;
+}
+
+.button_v_1 {
+  @apply px-6 py-3 bg-primary text-base font-bold text-fourth font-roboto capitalize rounded-lg w-full hover:bg-third hover:text-fifth;
+}
+
+.error_text {
+  @apply text-base text-sixth font-poppins;
+}
+
+/* registration end */
+
+/* header part start */
+
+#header {
+  @apply bg-primary py-2 md:py-4;
+}
+#header .main {
+  @apply container mx-auto flex px-2 justify-between items-center;
+}
+#header .main .left {
+  @apply w-[80%] md:w-[70%];
+}
+
+#header .main .right {
+  @apply w-[20%] md:w-[30%] flex items-center justify-end;
+}
+
+#header .main .right .img {
+  @apply w-[60px] h-[60px] md:w-[100px] md:h-[100px] rounded-full  overflow-hidden relative;
+}
+#header .main .right .img img {
+  @apply w-full h-full;
+}
+#header .main .right .img .upload_icon {
+  @apply hidden absolute h-full w-full cursor-pointer left-0 top-0 bg-black flex justify-center items-center bg-opacity-[70%];
+}
+#header .main .right .img .upload_icon svg {
+  @apply text-third text-3xl;
+}
+
+#header .main .right .img:hover .upload_icon {
+  @apply flex;
+}
+
+#header .main .left ul {
+  @apply flex gap-5;
+}
+#header .main .left ul li {
+  @apply h-[40px] w-[40px] md:h-[50px] md:w-[50px] bg-white flex justify-center items-center rounded-md cursor-pointer text-2xl md:text-3xl text-primary;
+}
+
+/* header part end */
+
+/* home start */
+#home {
+  @apply flex flex-wrap justify-between px-3 lg:px-10;
+}
+
+#home .item {
+  @apply w-[100%] md:w-[48%] lg:w-[32%] mb-7;
+}
+
+.list {
+  @apply relative p-5 h-[400px] overflow-y-scroll rounded-lg shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)];
+}
+
+.list .list_header {
+  @apply flex justify-between items-center sticky top-[-22px] mt-[-15px] z-50 mb-2 left-0 bg-white pt-4;
+}
+
+.list .list_header h2 {
+  @apply text-[22px] font-bold text-primary font-roboto;
+}
+
+.list svg {
+  @apply text-2xl text-secondary;
+}
+
+.listItem {
+  @apply p-5 mb-2 flex justify-between items-center border-b border-b-primary pb-2;
+}
+
+.listItem .imageAndName {
+  @apply flex gap-2 md:gap-4 items-center;
+}
+
+.listItem .imageAndName .img {
+  @apply w-[50px] h-[50px] md:w-[70px] md:h-[70px] bg-gray-500 rounded-full overflow-hidden;
+}
+
+.listItem .imageAndName .img img {
+  @apply w-full h-full object-cover object-center;
+}
+
+.listItem h2 {
+  @apply text-base md:text-xl font-bold text-fifth font-roboto;
+}
+
+.listItem p {
+  @apply text-sm md:text-base text-fifth font-roboto;
+}
+/* home end */
+
+/* button start */
+
+.button_v_2 {
+  @apply px-2 md:px-3 py-1 bg-primary text-sm font-medium font-roboto text-third capitalize rounded-lg w-full hover:bg-fourth hover:text-third transform active:scale-[1.1];
+}
+
+.button_v_3 {
+  @apply px-2 md:px-3 py-1 bg-sixth text-sm font-medium font-roboto text-fifth capitalize rounded-lg w-full hover:bg-secondary hover:text-third transform active:scale-[1.1];
+}
+
+.button_v_4 {
+  @apply px-2 md:px-3 py-1 bg-secondary text-sm font-medium font-roboto text-third capitalize rounded-lg w-full hover:bg-fourth hover:text-third transform active:scale-[1.1];
+}
+
+/* button end */
+
+/* scrollbar start */
+
+.list::-webkit-scrollbar {
+  @apply w-[5px];
+}
+
+.list::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-lg;
+}
+
+.profilePictureUploadmodal {
+  @apply w-screen h-screen bg-fourth fixed top-0 left-0 flex justify-center items-center z-[999];
+}
+
+.profilePictureUploadmodal .modal {
+  @apply p-6 bg-third rounded-lg w-[600px];
+}
+
+.profilePictureUploadmodal .img-preview {
+  @apply w-[100px] h-[50px] md:w-[150px] md:h-[100px] bg-gray-500 rounded-full overflow-hidden mx-auto my-5;
+}
+
+.profilePictureUploadmodal .profileImage {
+  @apply w-[100px] h-[100px] md:w-[150px] md:h-[150px] bg-gray-500 rounded-full overflow-hidden mx-auto my-5;
+}
+
+/* scrollbar end */
