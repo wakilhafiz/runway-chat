@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import regAnime from "../../../public/animation-json/Animation - 1699873431295.json";
+import regAnime from "../../../../public/animation-json/Animation - 1699873431295.json";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import { FaEyeSlash, FaEye } from "react-icons/fa";
